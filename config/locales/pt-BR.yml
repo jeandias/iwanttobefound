@@ -1,0 +1,72 @@
+pt:
+  activerecord:
+    attributes:
+      user:
+        email: E-mail
+        current_password: Senha atual
+        first_name: Primeiro nome
+        last_name: Último nome
+        password: Senha
+        password_confirmation: Confirmar senha
+    errors:
+      models:
+        user:
+          attributes:
+            current_password:
+              blank: é um campo obrigatório
+            email:
+              blank: é um campo obrigatório
+            first_name:
+              blank: é um campo obrigatório
+            last_name:
+              blank: é um campo obrigatório
+            password:
+              blank: é um campo obrigatório
+            password_confirmation:
+              confirmation: é um campo obrigatório
+    models:
+      user: Usuário
+  devise:
+    confirmations:
+      new:
+        resend_confirmation_instructions: Reenviar instruções de confirmação
+    passwords:
+      edit:
+        change_my_password:
+        change_your_password:
+        confirm_new_password:
+        new_password:
+      new:
+        forgot_your_password: Esqueceu a sua senha?
+        send_me_reset_password_instructions: Enviar-me instruções para repor a senha
+    registrations:
+      new:
+        sign_up: Criar conta
+      edit:
+        are_you_sure: Tens a certeza?
+        cancel_my_account: Cancelar a minha conta
+        currently_waiting_confirmation_for_email:
+        leave_blank_if_you_don_t_want_to_change_it: deixe em branco caso não queira alterar
+        title: Editar %{resource}
+        unhappy: Insatisfeito?
+        update: Atualizar
+        we_need_your_current_password_to_confirm_your_changes: precisamos da sua senha atual para confirmar as alterações
+    sessions:
+      new:
+        remember_me: Lembrar-se de mim
+        sign_in: Entrar
+    shared:
+      didn_t_receive_confirmation_instructions: Não recebeu instruções de confirmação?
+      didn_t_receive_unlock_instructions: Não recebeu instruções de desbloqueio?
+      forgot_your_password: Esqueceu a senha?
+      links:
+        back: Voltar
+      sign_in: Entrar
+      sign_in_with_provider: Entrar com %{provider}
+      sign_up: Criar conta
+      minimum_password_length: Mínimo de %{count} caracteres
+    unlocks:
+      new:
+        resend_unlock_instructions: Renviar instruções de desbloqueio
+  edit_profile: Editar perfil
+  logout: Terminar sessão
